@@ -13,7 +13,7 @@ EAGLE_DOCKER := docker run --rm -v $(CURDIR):/work -w /work terriblefire78/eagle
 # Variables for PDF generation
 SCH_FILE := $(BOARDPREFIX).sch
 PDF_FILE := $(BOARDPREFIX)_$(GITVERSION)_$(DATESTRING).pdf
-EAGLE_PDF_DOCKER := docker run --rm -v $(CURDIR):/work -w /work terriblefire78/eagle-pdf
+EAGLE_PDF_DOCKER := docker run --rm -v $(CURDIR):/work -w /work terriblefire78/eagle-pdf python /app/generate_schematic_pdf.py
 
 # Default target
 .PHONY: all
