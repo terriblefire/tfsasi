@@ -54,6 +54,8 @@ The Eagle schematic and board files are in the `eagle/` directory:
 - `tfsasi.sch` - Complete schematic
 - `tfsasi.brd` - PCB layout (to be created)
 
+**Note:** The board is configured as a 4-layer PCB with one layer missing. This is intentional for the design requirements.
+
 ## Building Gerbers
 
 ### Using Make (with Docker)
