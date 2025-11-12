@@ -5,6 +5,8 @@
 
 A 3-way universal adapter board for connecting SASI 20-pin, SASI 26-pin, or SCSI 50-pin devices.
 
+> **⚠️ WARNING: This board has not yet been tested. Use at your own risk.**
+
 ![TFSASI Adapter Board](images/tfsasi_v1.jpg)
 
 ## Overview
