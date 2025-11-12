@@ -1,5 +1,8 @@
 # TFSASI - SASI to SCSI Adapter
 
+[![Generate Gerbers](https://github.com/terriblefire/tfsasi/actions/workflows/gerbers.yml/badge.svg)](https://github.com/terriblefire/tfsasi/actions/workflows/gerbers.yml)
+[![Generate Schematic PDF](https://github.com/terriblefire/tfsasi/actions/workflows/schematic-pdf.yml/badge.svg)](https://github.com/terriblefire/tfsasi/actions/workflows/schematic-pdf.yml)
+
 A 3-way universal adapter board for connecting SASI 20-pin, SASI 26-pin, or SCSI 50-pin devices.
 
 ## Overview
