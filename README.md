@@ -21,7 +21,7 @@ This adapter allows you to connect:
 - **3-way adapter**: SASI 20-pin, SASI 26-pin, and SCSI 50-pin connectors
 - **4-layer PCB design** for improved signal integrity
 - **All signals properly mapped** between connectors
-- **LED pins marked as not connected** (requires separate handling)
+- **LED header connections provided** - Separate headers are included for HDD activity LED signals (SASI-20 pin 12, SASI-26 pin 16) to allow for custom LED driver circuits
 - **Mirrored connector footprints** for proper cable orientation
 - **Full SCSI-1 compatibility** with parity and attention signals (on 26-pin)
 
@@ -93,7 +93,7 @@ Special signals:
 - **DBP (Parity)**: Only on SASI 26-pin and SCSI 50-pin
 - **ATN (Attention)**: Only on SASI 26-pin and SCSI 50-pin
 - **TERMPWR**: Only on SASI 26-pin and SCSI 50-pin
-- **LED**: Not connected (requires separate handling)
+- **LED**: Separate headers provided for HDD activity LED signals from SASI-20 pin 12 and SASI-26 pin 16 (see [LED_SPECIFICATIONS.md](LED_SPECIFICATIONS.md) for driver circuit information)
 
 ## License
 
