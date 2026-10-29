@@ -5,7 +5,9 @@
 
 A 3-way universal adapter board for connecting SASI 20-pin, SASI 26-pin, or SCSI 50-pin devices.
 
-> **⚠️ WARNING: This board has not yet been tested. Use at your own risk.**
+> **ℹ️ Tested:** SASI 20-pin (J1) with an X68000 EXPERT and a BlueSCSI.
+>
+> **⚠️ WARNING:** The SASI 26-pin connector (J2) has not yet been tested. Use at your own risk.
 
 ![TFSASI Adapter Board](images/tfsasi_v1.jpg)
 
@@ -44,6 +46,20 @@ This adapter allows you to connect:
 - Standard SCSI-1 interface
 - Pin 18 (DBP/parity) connects from SASI 26-pin
 - Pin 32 (ATN) connects from SASI 26-pin only
+
+## Assembly
+
+All three connector footprints are **mirrored** (a mirror image of a standard header when viewed from the top). The connectors must therefore be fitted on specific sides of the board, or the signals will be scrambled (odd/even rows swapped):
+
+| Connector | Part | Fit on | Mates with |
+|-----------|------|--------|------------|
+| J1 (SASI 20-pin) | Male pin header | **Bottom** side (pins pointing down) | Ribbon cable, plugged in from below |
+| J2 (SASI 26-pin) | Male pin header | **Bottom** side (pins pointing down) | Ribbon cable, plugged in from below |
+| J3 (SCSI 50-pin) | Female pin socket | **Top** side | Male 50-pin header of the SCSI device (e.g. BlueSCSI), mounted face-to-face from above |
+
+- Orient each ribbon cable so the stripe (pin 1) is at the square pad end.
+- Leave JP1/JP2 open unless you need the LED signal; SCSI pin 34 is GND on most SCSI devices.
+- **Verify after assembly:** with everything connected, check continuity from SASI pin 1 (-DB0) to SCSI pin 2 (-DB0). If SASI pin 1 instead connects to SCSI pin 4, the rows are swapped.
 
 ## Documentation
 
